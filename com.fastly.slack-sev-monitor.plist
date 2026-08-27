@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.fastly.slack-sev-monitor</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/opt/homebrew/bin/claude</string>
+    <string>-p</string>
+    <string>/slack-sev-monitor</string>
+    <string>--allowedTools</string>
+    <string>Read Write Edit mcp__claude_ai_Slack__slack_read_channel mcp__claude_ai_Slack__slack_read_thread mcp__claude_ai_Slack__slack_search_users mcp__claude_ai_Slack__slack_send_message</string>
+  </array>
+  <key>WorkingDirectory</key>
+  <string>/Users/bharwani</string>
+  <key>StartInterval</key>
+  <integer>900</integer>
+  <key>RunAtLoad</key>
+  <false/>
+  <key>StandardOutPath</key>
+  <string>/Users/bharwani/Library/Logs/slack-sev-monitor.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/bharwani/Library/Logs/slack-sev-monitor.err.log</string>
+</dict>
+</plist>
